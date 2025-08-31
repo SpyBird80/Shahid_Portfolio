@@ -32,12 +32,199 @@
                 <a href="service.html">Services</a>
                 <a href="contact.html" class="active">Contact</a>
             </div>
-            <a href="contact.html" class="cta-button decoration-btn">Get In Touch</a>
+            <a href="contact.html" class="cta-button decoration-btn header-btn">Get In Touch</a>
 
+             <button class="mobile-menu-btn" id="menuBtn">
+                <!-- <p>Navigate Here</p> -->
+                <i class="fas fa-bars"></i>
+            </button>
+        
         </nav>
     </header>
     <!-- Navigation End -->
+<!-- Mobile Menu Popup -->
+    <div class="mobile-menu-popup" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <a href="Home.html" id="home-link"> <span id="home">SHAHID</span></a>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="Home.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html" class="mobile-cta-button">Get In Touch</a>
+        </nav>
+    </div>
 
+    <script>
+        // Initialize GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Custom cursor
+        // const cursor = document.querySelector('.cursor');
+        // const follower = document.querySelector('.cursor-follower');
+        // let posX = 0, posY = 0;
+        // let mouseX = 0, mouseY = 0;
+
+        gsap.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                gsap.set(follower, {
+                    css: {
+                        left: posX - 12,
+                        top: posY - 12
+                    }
+                });
+
+                gsap.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        document.querySelectorAll('button, a, .cta-button, .secondary-button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('grow');
+                follower.classList.add('grow');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('grow');
+                follower.classList.remove('grow');
+            });
+        });
+
+        // Mobile Menu JavaScript
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        // Open mobile menu
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+
+        // Close mobile menu
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close menu with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Three.js Background
+        function initThreeJS() {
+            // Scene setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({
+                canvas: document.createElement('canvas'),
+                alpha: true,
+                antialias: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            // Create particles
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 2000;
+
+            const posArray = new Float32Array(particlesCount * 3);
+            const colorArray = new Float32Array(particlesCount * 3);
+
+            for (let i = 0; i < particlesCount * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 20;
+                colorArray[i] = Math.random();
+            }
+
+            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorArray, 3));
+
+            // Material
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.05,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            // Points system
+            const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+
+            // Camera position
+            camera.position.z = 5;
+
+            // Mouse movement
+            let mouseX = 0;
+            let mouseY = 0;
+
+            document.addEventListener('mousemove', (event) => {
+                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            });
+
+            // Animation
+            const animate = () => {
+                requestAnimationFrame(animate);
+
+                // Rotate particles
+                particlesMesh.rotation.x += 0.0005;
+                particlesMesh.rotation.y += 0.001;
+
+                // Move camera with mouse
+                camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+                camera.position.y += (mouseY * 2 - camera.position.y) * 0.05;
+                camera.lookAt(scene.position);
+
+                renderer.render(scene, camera);
+            };
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            animate();
+        }
+
+        // Initialize Three.js when page loads
+        window.addEventListener('load', initThreeJS);
+    </script>
+    
     <main>
         <!-- Hero Section -->
         <section class="hero">
