@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services | Shahid - Creative Web Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <i class="fas fa-code"></i> -->
+                <a href="Home.html" id="home-link"> <span id="home">SHAHID</span></a>
+            </div>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="service.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="cta-button decoration-btn">Get In Touch</a>
+
+        </nav>
+    </header>
+    <!-- Navigation End -->
+
+
+    <main>
+        <!-- Hero Section -->
+
+        <section class="hero">
+            <canvas id="three-canvas"></canvas>
+            <div class="hero-content">
+                <h1>My Services</h1>
+                <p>Professional web development and design solutions tailored to your needs</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="section-header">
+                <h2>What I Offer</h2>
+                <p>Comprehensive creative services to bring your vision to life</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress Design</h3>
+                    <p>Transform your online presence with custom WordPress websites that are both beautiful and
+                        functional.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Custom Theme Development</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                        <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Plugin Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Content Management</li>
+                        <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                    </ul>
+                    <div class="service-price">Starting at $50</div>
+                    <a href="contact.html" class="cta-button decoration-btn header-btn">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Create modern, responsive websites with clean code and exceptional user experiences.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> HTML5 & CSS3</li>
+                        <li><i class="fas fa-check-circle"></i> JavaScript & jQuery</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                        <li><i class="fas fa-check-circle"></i> Cross-browser Compatibility</li>
+                        <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Modern Frameworks</li>
+                    </ul>
+                    <div class="service-price">Starting at $150</div>
+                    <a href="contact.html" class="cta-button decoration-btn">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Graphic Design with Canva</h3>
+                    <p>Eye-catching graphics and visual content that effectively communicate your brand message.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Logo Design</li>
+                        <li><i class="fas fa-check-circle"></i> Social Media Graphics</li>
+                        <li><i class="fas fa-check-circle"></i> Marketing Materials</li>
+                        <li><i class="fas fa-check-circle"></i> Brand Identity</li>
+                        <li><i class="fas fa-check-circle"></i> Print Design</li>
+                        <li><i class="fas fa-check-circle"></i> Digital Illustrations</li>
+                    </ul>
+                    <div class="service-price">Starting at $50</div>
+                    <a href="contact.html" class="cta-button decoration-btn">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Engage your audience with professional video editing tailored for YouTube, social media, and
+                        promotional needs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> YouTube & Social Media Editing</li>
+                        <li><i class="fas fa-check-circle"></i> Promotional & Marketing Videos</li>
+                        <li><i class="fas fa-check-circle"></i> Cinematic Editing & Color Grading</li>
+                        <li><i class="fas fa-check-circle"></i> Reels & Shorts Creation</li>
+                        <li><i class="fas fa-check-circle"></i> Motion Graphics & Text Animation</li>
+                        <li><i class="fas fa-check-circle"></i>Audio Enhancement & Mixing </li>
+                    </ul>
+                    <div class="service-price">Starting at $50</div>
+                    <a href="contact.html" class="cta-button decoration-btn">Get Started</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Thumbnail & Logo Designer</h3>
+                    <p>Build a strong visual identity with unique thumbnails and logos that capture attention and boost
+                        brand recognition.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> YouTube Thumbnails</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Logo Design</li>
+                        <li><i class="fas fa-check-circle"></i> Brand Identity Kits</li>
+                        <li><i class="fas fa-check-circle"></i> Social Media Graphics</li>
+                        <li><i class="fas fa-check-circle"></i>Typography & Color Psychology </li>
+                        <li><i class="fas fa-check-circle"></i> Scalable Vector Designs</li>
+                    </ul>
+                    <div class="service-price">Starting at $25</div>
+                    <a href="contact.html" class="cta-button decoration-btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process" id="process">
+            <div class="section-header">
+                <h2>My Process</h2>
+                <p>How I bring your ideas to life</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <h3>Discovery</h3>
+                    <p>Understanding your goals, target audience, and project requirements through detailed
+                        consultation.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <h3>Planning</h3>
+                    <p>Creating a comprehensive project plan with timelines, milestones, and deliverables.</p>
+                </div>
+                <div class="process-step">
+                    <h3>Design</h3>
+                    <p>Developing creative concepts and designs that align with your brand and objectives.</p>
+                </div>
+                <div class="process-step">
+                    <h3>Development</h3>
+                    <p>Bringing designs to life with clean, efficient code and thorough testing.</p>
+                </div>
+                <div class="process-step">
+                    <h3>Launch</h3>
+                    <p>Deploying your project and ensuring everything works perfectly across all platforms.</p>
+                </div>
+                <div class="process-step">
+                    <h3>Support</h3>
+                    <p>Providing ongoing maintenance and support to keep your project running smoothly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's work together to bring your vision to life with professional web development and design
+                    services.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button decoration-btn">Get a Quote</a>
+                    <a href="portfolio.html" class="secondary-button decoration-btn">View Portfolio</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>SHAHID</h3>
+                <p>I’m a skilled WordPress Designer and Front-End Developer, specializing in responsive and
+                    SEO-optimized websites. As a UI/UX Designer, I craft clean, user-friendly designs with Canva that
+                    enhance digital experiences and bring ideas to life.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-shahid-33a7a720b/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/MUHAMMA46396783"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/muhammad.shahid.91999/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/shahid.dev1/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/SpyBird80"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">WordPress Design</a></li>
+                    <li><a href="#">Frontend Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Video Editing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:shahid.devmail@gmail.com">shahid.devmail@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+923027918080">+92 (302) 791-8080</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chishtian, Pakistan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SHAHID. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+        let posX = 0, posY = 0;
+        let mouseX = 0, mouseY = 0;
+
+        gsap.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                gsap.set(follower, {
+                    css: {
+                        left: posX - 12,
+                        top: posY - 12
+                    }
+                });
+
+                gsap.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        document.addEventListener('mouseenter', (e) => {
+            if (e.target.closest('button, a, .cta-button, .secondary-button, .service-card')) {
+                cursor.classList.add('grow');
+                follower.classList.add('grow');
+            }
+        });
+
+        document.addEventListener('mouseleave', (e) => {
+            if (e.target.closest('button, a, .cta-button, .secondary-button, .service-card')) {
+                cursor.classList.remove('grow');
+                follower.classList.remove('grow');
+            }
+        });
+
+        // Hero section animations
+        gsap.from('.hero h1', {
+            duration: 1.5,
+            y: 100,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.2
+        });
+
+        gsap.from('.hero p', {
+            duration: 1.5,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.4
+        });
+
+        // Service cards animation
+        gsap.utils.toArray('.service-card').forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 85%'
+                },
+                duration: 1,
+                y: 100,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: i * 0.2
+            });
+        });
+
+        // Process steps animation
+        gsap.utils.toArray('.process-step').forEach((step, i) => {
+            gsap.from(step, {
+                scrollTrigger: {
+                    trigger: step,
+                    start: 'top 85%'
+                },
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: i * 0.1
+            });
+        });
+
+        // CTA section animation
+        gsap.from('.cta-content h2', {
+            scrollTrigger: {
+                trigger: '.cta-content h2',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.cta-content p', {
+            scrollTrigger: {
+                trigger: '.cta-content p',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.2
+        });
+
+        gsap.from('.cta-buttons', {
+            scrollTrigger: {
+                trigger: '.cta-buttons',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.4
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.cta-button, .secondary-button').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: -5,
+                    ease: 'power2.out'
+                });
+            });
+
+            button.addEventListener('mouseleave', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: 0,
+                    ease: 'power2.out'
+                });
+            });
+        });
+
+        // Three.js Background
+        function initThreeJS() {
+            // Scene setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById('three-canvas'),
+                alpha: true,
+                antialias: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            // Create particles
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 1500;
+
+            const posArray = new Float32Array(particlesCount * 3);
+            const colorArray = new Float32Array(particlesCount * 3);
+
+            for (let i = 0; i < particlesCount * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 20;
+                colorArray[i] = Math.random();
+            }
+
+            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorArray, 3));
+
+            // Material
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.05,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            // Points system
+            const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+
+            // Camera position
+            camera.position.z = 5;
+
+            // Mouse movement
+            let mouseX = 0;
+            let mouseY = 0;
+
+            document.addEventListener('mousemove', (event) => {
+                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            });
+
+            // Animation
+            const animate = () => {
+                requestAnimationFrame(animate);
+
+                // Rotate particles
+                particlesMesh.rotation.x += 0.0005;
+                particlesMesh.rotation.y += 0.001;
+
+                // Move camera with mouse
+                camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+                camera.position.y += (mouseY * 2 - camera.position.y) * 0.05;
+                camera.lookAt(scene.position);
+
+                renderer.render(scene, camera);
+            };
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            animate();
+        }
+
+        // Initialize Three.js when page loads
+        window.addEventListener('load', initThreeJS);
+
+        // Smooth scrolling ONLY for internal section links (#id)
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

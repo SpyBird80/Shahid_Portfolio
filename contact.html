@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch | Shahid - Creative Web Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <i class="fas fa-code"></i> -->
+                <a href="Home.html" id="home-link"> <span id="home">SHAHID</span></a>
+            </div>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <a href="contact.html" class="cta-button decoration-btn">Get In Touch</a>
+
+        </nav>
+    </header>
+    <!-- Navigation End -->
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <canvas id="three-canvas"></canvas>
+            <div class="hero-content">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your next project? Let's discuss how I can help bring your vision to life</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3><i class="fas fa-handshake"></i> Let's Work Together</h3>
+                        <p>I'm always excited to work on new projects and help businesses achieve their digital goals.
+                            Whether you need a new website, graphic design, or any of my other services, I'm here to
+                            help.
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3><i class="fas fa-info-circle"></i> Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:shahid.devmail@gmail.com">shahid.devmail@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+923027918080">+92 (302) 791-8080</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Available Worldwide</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Response Time</h4>
+                                    <p>Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3><i class="fas fa-share-alt"></i> Follow Me</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2 class="form-title">Send Me a Message</h2>
+
+
+
+                    <div class="contact-form">
+                        <h2 class="form-title">Send Me a Message</h2>
+
+                        <!-- The Form -->
+                        <form action="https://formsubmit.co/7af0a620b069a983ed3a849fe78ee292" method="POST"
+                            id="contactForm">
+
+                            <!-- Hidden Inputs for FormSubmit.co -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:3000/contact.html">
+                            <input type="hidden" name="_subject" value="New Message from Portfolio Site">
+
+                            <!-- Form Fields -->
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" name="name" id="name" class="form-control"
+                                    placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="Enter your email address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone-number" id="phone" class="form-control"
+                                    placeholder="Enter your phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Needed *</label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="">Select a service</option>
+                                    <option value="wordpress">WordPress Design</option>
+                                    <option value="frontend">Frontend Development</option>
+                                    <option value="graphics">Graphic Design with Canva</option>
+                                    <option value="video">Video Editing</option>
+                                    <option value="thumbnails">Thumbnail & Logo Designer</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget" class="form-control">
+                                    <option value="">Select budget range</option>
+                                    <option value="0-100">$0 - $100</option>
+                                    <option value="100-500">$100 - $500</option>
+                                    <option value="500-1000">$500 - $1000</option>
+                                    <option value="1000-2500">$1000 - $2500</option>
+                                    <option value="2500-5000">$2500 - $5000</option>
+                                    <option value="5000+">$5000+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">Project Timeline</label>
+                                <select id="timeline" name="timeline" class="form-control">
+                                    <option value="">Select timeline</option>
+                                    <option value="1-2weeks">1-2 Weeks</option>
+                                    <option value="1month">1 Month</option>
+                                    <option value="2-3months">2-3 Months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="details">Project Details *</label>
+                                <textarea id="details" name="message" class="form-control"
+                                    placeholder="Please describe your project, goals, and any specific requirements..."
+                                    required></textarea>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <label for="newsletter">Subscribe to newsletter for web development tips and
+                                    updates</label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="submit-btn decoration-btn">Send Message</button>
+
+                            <!-- ✅ Success Message directly below button -->
+                            <div id="success-message"
+                                style="display: none; color: #10b981; font-weight: bold; margin-top: 15px;">
+                                ✅ Your message has been sent successfully! I'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p>Find answers to common questions about my services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does a typical project take?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on complexity and scope. Simple websites typically take 2-4
+                            weeks,
+                            while more complex projects can take 1-3 months. During our initial consultation, I'll
+                            provide a
+                            detailed timeline based on your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you provide ongoing support after project completion?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I offer ongoing maintenance and support packages to ensure your website continues to
+                            perform
+                            optimally. This includes updates, security monitoring, backups, and technical support. We
+                            can
+                            discuss the level of support that best fits your needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What information do you need to start a project?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To get started, I'll need to understand your goals, target audience, and project
+                            requirements.
+                            We'll schedule a consultation to discuss your vision, review any existing materials, and
+                            determine the scope of work. I'll also need access to any content, images, or branding
+                            materials
+                            you have.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you work with clients internationally?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! I work with clients from all over the world. Thanks to modern communication tools
+                            and
+                            project management platforms, I can effectively collaborate with international clients. All
+                            projects are managed through secure online platforms to ensure smooth communication and file
+                            sharing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What's your payment process?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For new projects, I typically require a 50% deposit to begin work, with the remaining balance
+                            due
+                            upon completion. For ongoing services, I offer flexible billing options including monthly
+                            retainers. Payments can be made via bank transfer or credit card through secure
+                            payment
+                            processors.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can you help with SEO and digital marketing?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I can help with on-page SEO optimization as part of website development. For
+                            comprehensive
+                            digital marketing strategies, I work with trusted partners who specialize in SEO, content
+                            marketing, and paid advertising. I can coordinate with these specialists to ensure your
+                            project
+                            aligns with your marketing goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>SHAHID</h3>
+                <p>I’m a skilled WordPress Designer and Front-End Developer, specializing in responsive and
+                    SEO-optimized websites. As a UI/UX Designer, I craft clean, user-friendly designs with Canva that
+                    enhance digital experiences and bring ideas to life.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-shahid-33a7a720b/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/MUHAMMA46396783"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/muhammad.shahid.91999/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/shahid.dev1/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/SpyBird80"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">WordPress Design</a></li>
+                    <li><a href="#">Frontend Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Video Editing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:shahid.devmail@gmail.com">shahid.devmail@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+923027918080">+92 (302) 791-8080</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chishtian, Pakistan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SHAHID. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+        let posX = 0, posY = 0;
+        let mouseX = 0, mouseY = 0;
+
+        gsap.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                gsap.set(follower, {
+                    css: {
+                        left: posX - 12,
+                        top: posY - 12
+                    }
+                });
+
+                gsap.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        document.addEventListener('mouseenter', (e) => {
+            if (e.target.closest('button, a, .cta-button, .submit-btn, .faq-question, .form-control')) {
+                cursor.classList.add('grow');
+                follower.classList.add('grow');
+            }
+        });
+
+        document.addEventListener('mouseleave', (e) => {
+            if (e.target.closest('button, a, .cta-button, .submit-btn, .faq-question, .form-control')) {
+                cursor.classList.remove('grow');
+                follower.classList.remove('grow');
+            }
+        });
+
+        // Hero section animations
+        gsap.from('.hero h1', {
+            duration: 1.5,
+            y: 100,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.2
+        });
+
+        gsap.from('.hero p', {
+            duration: 1.5,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.4
+        });
+
+        // Contact info animation
+        gsap.from('.contact-card', {
+            scrollTrigger: {
+                trigger: '.contact-card',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out',
+            stagger: 0.2
+        });
+
+        // Contact form animation
+        gsap.from('.contact-form', {
+            scrollTrigger: {
+                trigger: '.contact-form',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        // FAQ animation
+        gsap.from('.faq-item', {
+            scrollTrigger: {
+                trigger: '.faq-item',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: 'power3.out',
+            stagger: 0.1
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.cta-button, .submit-btn').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: -5,
+                    ease: 'power2.out'
+                });
+            });
+
+            button.addEventListener('mouseleave', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: 0,
+                    ease: 'power2.out'
+                });
+            });
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+
+
+        // Form submission
+        // const contactForm = document.getElementById('contactForm');
+        // const successMsg = document.getElementById('success-message');
+
+        // contactForm.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+
+
+        //     gsap.to('.submit-btn', {
+        //         duration: 0.3,
+        //         backgroundColor: '#10b981',
+        //         innerHTML: 'Message Sent!',
+        //         onComplete: () => {
+        //             setTimeout(() => {
+        //                 gsap.to('.submit-btn', {
+        //                     duration: 0.3,
+        //                     backgroundColor: 'linear-gradient(90deg, var(--primary), var(--secondary))',
+        //                     innerHTML: 'Send Message'
+        //                 });
+        //             }, 2000);
+        //         }
+        //     });
+
+
+        //     successMsg.style.display = 'block';
+
+
+        //     setTimeout(() => {
+        //         successMsg.style.display = 'none';
+        //     }, 5000);
+
+
+        //     contactForm.reset();
+        // });
+
+        // Three.js Background
+        function initThreeJS() {
+            // Scene setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById('three-canvas'),
+                alpha: true,
+                antialias: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            // Create particles
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 1500;
+
+            const posArray = new Float32Array(particlesCount * 3);
+            const colorArray = new Float32Array(particlesCount * 3);
+
+            for (let i = 0; i < particlesCount * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 20;
+                colorArray[i] = Math.random();
+            }
+
+            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorArray, 3));
+
+            // Material
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.05,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            // Points system
+            const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+
+            // Camera position
+            camera.position.z = 5;
+
+            // Mouse movement
+            let mouseX = 0;
+            let mouseY = 0;
+
+            document.addEventListener('mousemove', (event) => {
+                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            });
+
+            // Animation
+            const animate = () => {
+                requestAnimationFrame(animate);
+
+                // Rotate particles
+                particlesMesh.rotation.x += 0.0005;
+                particlesMesh.rotation.y += 0.001;
+
+                // Move camera with mouse
+                camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+                camera.position.y += (mouseY * 2 - camera.position.y) * 0.05;
+                camera.lookAt(scene.position);
+
+                renderer.render(scene, camera);
+            };
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            animate();
+        }
+
+        // Initialize Three.js when page loads
+        window.addEventListener('load', initThreeJS);
+
+        // Smooth scrolling ONLY for internal section links (#id)
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

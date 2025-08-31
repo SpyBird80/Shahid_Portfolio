@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Shahid - Creative Web Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <i class="fas fa-code"></i> -->
+                <a href="Home.html" id="home-link"> <span id="home">SHAHID</span></a>
+            </div>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="cta-button decoration-btn header-btn">Get In Touch</a>
+
+        </nav>
+    </header>
+    <!-- Navigation End -->
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <canvas id="three-canvas"></canvas>
+            <div class="hero-content">
+                <h1>About Me</h1>
+                <p>I’m a Software Engineer and WordPress Designer currently working at WSM Solutions, where I design and
+                    customize responsive WordPress websites with a strong focus on user experience and visual appeal. My
+                    skills in HTML, CSS, Bootstrap, and Canva for UI/UX design allow me to create seamless,
+                    client-focused digital solutions. I also contribute to real-world impact through the Kaar-e-Kamal
+                    Welfare Foundation, combining creative design with development to support meaningful community
+                    projects.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <img src="Media/images/Portfolio-about-image-1.webp" alt="Shahid's Picture" class="about-bg-image">
+            </div>
+            <div class="about-social-links">
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:shahid.devmail@gmail.com">shahid.devmail@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+923027918080">+92 (302) 791-8080</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chishtian, Pakistan</li>
+                </ul>
+                <a href="Media/Muhammad_Shahid_Job_Simple_CV.pdf" class="cta-button decoration-btn">Download
+                    Resume</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-shahid-33a7a720b/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/MUHAMMA46396783"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/muhammad.shahid.91999/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/shahid.dev1/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/SpyBird80"><i class="fab fa-github"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats process-steps-one">
+            <div class="process-step process-margen" id="wordpress">
+                <h3>Professional WordPress Developer – Building Custom, Responsive, SEO-Friendly & WooCommerce Solutions
+                    Websites</h3>
+                <p>I’m a skilled WordPress Developer with hands-on experience in building and customizing responsive
+                    websites using the WordPress CMS. I specialize in custom theme development, plugin configuration,
+                    and website optimization for speed, SEO, and security.
+
+                    Whether it's a sleek portfolio, a full-featured WooCommerce store, or a business site, I design and
+                    develop with user experience and functionality in mind. I blend clean code with powerful plugins to
+                    deliver scalable, visually appealing, and high-performing websites tailored to each client's needs.
+                </p>
+                <div class="key-feature">
+                    <h3>Key Features & Skills:</h3>
+                </div>
+                <div class="key-feature-grid">
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li class=""><i class="fas fa-check-circle"></i> Custom WordPress Theme Development
+                                Tailored themes designed to match brand identity and user expectations.</li>
+                            <li><i class="fas fa-check-circle"></i> Plugin Installation & Configuration
+                                Integrated essential plugins for SEO, performance, contact forms, and security.</li>
+                            <li><i class="fas fa-check-circle"></i> WooCommerce Store Setup
+                                Built secure, conversion-focused online stores with full eCommerce functionality.</li>
+                            <li><i class="fas fa-check-circle"></i>SEO Optimization
+                                Improved search visibility using plugins like Yoast SEO and Rank Math. </li>
+                        </ul>
+                    </div>
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li class=""><i class="fas fa-check-circle"></i>Contact Form Integration
+                                Added dynamic, user-friendly forms with WPForms and Contact Form 7.</li>
+                            <li><i class="fas fa-check-circle"></i> Portfolio Website Development
+                                Designed modern portfolio sites to professionally showcase client or personal work.</li>
+                            <li><i class="fas fa-check-circle"></i> Website Speed Optimization
+                                Enhanced performance through caching, image optimization, and lightweight designs.</li>
+                            <li><i class="fas fa-check-circle"></i>Website Security Setup
+                                Secured websites with best practices and trusted plugins against vulnerabilities. </li>
+                        </ul>
+                    </div>
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li class=""><i class="fas fa-check-circle"></i>Content Management & Updates
+                                Ensured smooth updates and easy content control with WordPress’s user-friendly
+                                dashboard. </li>
+                            <li><i class="fas fa-check-circle"></i>Responsive & Mobile-Friendly Design
+                                Delivered seamless experiences across all devices, from desktops to mobile.</li>
+                            <li><i class="fas fa-check-circle"></i>Theme & Plugin Troubleshooting
+                                Efficiently resolved display, compatibility, and speed issues.</li>
+                            <li><i class="fas fa-check-circle"></i>Custom Code + Ready-Made Solutions
+                                Combined custom development with flexible tools to meet diverse project goals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-step process-margen" id="frontend">
+                <h3>Front-End Web Developer – Responsive, Fast, and User-Friendly Websites</h3>
+                <p>I specialize in Front-End Web Development, creating fast, responsive, and visually appealing websites
+                    using HTML, CSS, and Bootstrap. With a strong focus on user experience, I build clean,
+                    mobile-friendly layouts that load quickly, function smoothly, and provide seamless navigation across
+                    all devices.
+
+                    By translating modern UI/UX designs into pixel-perfect, accessible, and cross-browser compatible
+                    interfaces, I ensure a high-quality user experience. I’m skilled in writing maintainable, scalable
+                    code, optimizing website performance, and integrating JavaScript for dynamic functionality. My goal
+                    is to turn creative ideas into functional digital experiences that engage users and drive results.
+                </p>
+                <div class="key-feature">
+                    <h3>Key Features & Skills:</h3>
+                </div>
+                <div class="key-feature-grid">
+
+                    <!-- Front-End Web Development -->
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Responsive Web Design
+                                Crafting mobile-first, flexible layouts that adapt beautifully to all screen sizes.</li>
+
+                            <li><i class="fas fa-check-circle"></i> HTML, CSS & Bootstrap Expertise
+                                Building clean, well-structured front-end code for intuitive and aesthetic interfaces.
+                            </li>
+
+                            <li><i class="fas fa-check-circle"></i> JavaScript Integration
+                                Adding interactivity and functionality with scalable, performance-optimized JS code.
+                            </li>
+
+                            <li><i class="fas fa-check-circle"></i> Cross-Browser Compatibility
+                                Ensuring consistent design and functionality across all major web browsers.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Performance Optimization
+                                Speeding up websites through efficient coding, image optimization, and reduced load
+                                times.</li>
+
+                            <li><i class="fas fa-check-circle"></i> UI/UX Best Practices
+                                Applying modern user experience principles for intuitive, user-friendly interfaces.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Pixel-Perfect Design Implementation
+                                Precisely converting UI designs into responsive, high-fidelity web pages.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Clean & Maintainable Code
+                                Writing reusable, well-organized code that’s easy to manage and scale.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Website Accessibility (A11y)
+                                Following WCAG guidelines to make websites inclusive for all users.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Version Control with Git
+                                Managing projects efficiently using Git for version tracking and collaboration.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="process-step process-margen" id="canva">
+                <h3>Creative Canva Designer – Visual Storytelling for Web, Print & Social Media</h3>
+                <p>As a Canva Design Specialist, I create visually appealing, brand-consistent graphics that elevate
+                    both web and print experiences. I’m skilled in designing engaging visuals for social media,
+                    presentations, websites, and marketing campaigns. With a strong command of Canva’s templates, brand
+                    kits, and custom layouts, I craft clear, on-brand designs that improve communication and enhance
+                    user experience.
+
+                    In addition to freelance design work, I actively contribute to the Kaar-e-Kamal Welfare Foundation,
+                    where I apply my design expertise to develop pamphlets, activity diagrams, and appreciation
+                    templates for community-centered initiatives. This work allows me to blend creativity with social
+                    impact, using design to support meaningful causes.
+                </p>
+                <div class="key-feature">
+                    <h3>Key Features & Skills:</h3>
+                </div>
+                <div class="key-feature-grid">
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Social Media Graphics
+                                Designing eye-catching posts, stories, and banners for platforms like Instagram,
+                                Facebook, and LinkedIn.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Logo Design & Branding Kits
+                                Creating cohesive brand identities with logos, color schemes, and typography.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Presentation Design
+                                Crafting visually compelling slides for business meetings, pitches, and educational
+                                content.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Posters & Flyers
+                                Designing high-quality marketing materials for both print and digital campaigns.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Template Customization
+                                Tailoring Canva templates to align with specific brand styles and content goals.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Collaborative Design Projects
+                                Utilizing Canva’s team features to streamline client feedback and real-time
+                                collaboration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="process-step process-margen" id="video">
+                <h3>Video Editor – Engaging & Professional Content Creation</h3>
+                <p>
+                    I provide video editing services to create polished, engaging, and audience-focused content. Whether
+                    it’s YouTube videos, promotional reels, or social campaigns, I use editing techniques, transitions,
+                    and effects to craft compelling visual stories that capture attention.
+                </p>
+                <div class="key-feature">
+                    <h3>Key Features & Skills:</h3>
+                </div>
+                <div class="key-feature-grid">
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> YouTube & Social Media Editing
+                                Creating engaging edits with smooth transitions, subtitles, and effects tailored for
+                                platforms.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Promotional & Marketing Videos
+                                Designing professional promo videos that boost brand visibility and conversions.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Cinematic Editing
+                                Applying color correction, grading, and sound design for polished, high-quality videos.
+                            </li>
+
+                            <li><i class="fas fa-check-circle"></i> Reels & Shorts Creation
+                                Crafting fast-paced, catchy edits for Instagram Reels, TikTok, and YouTube Shorts.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Motion Graphics & Text Animation
+                                Enhancing videos with creative titles, captions, and animated elements.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Audio Enhancement
+                                Balancing sound, removing noise, and syncing background music with visuals.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Storytelling Through Editing
+                                Structuring clips to deliver impactful narratives and keep viewers engaged.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="process-step process-margen" id="thumbnail">
+                <h3>Thumbnail & Logo Designer – Strong Visual Branding</h3>
+                <p>
+                    I design eye-catching thumbnails and professional logos that enhance digital branding. My designs
+                    are tailored to attract clicks, increase engagement, and establish brand identity across social
+                    media and business platforms.</p>
+                <div class="key-feature">
+                    <h3>Key Features & Skills:</h3>
+                </div>
+                <div class="key-feature-grid">
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> YouTube Thumbnails
+                                Designing click-worthy thumbnails that boost CTR and grab audience attention.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Custom Logo Design
+                                Creating unique, brand-focused logos for businesses, websites, and social media.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Brand Identity Kits
+                                Developing cohesive style guides including colors, fonts, and logo variations.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Social Media Graphics
+                                Crafting icons, banners, and branding elements for consistent online presence.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Typography & Color Psychology
+                                Using design principles to enhance readability and emotional impact.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Scalable Vector Designs
+                                Delivering high-resolution, scalable logos suitable for print and digital.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Creative Concept Development
+                                Brainstorming and presenting multiple design directions aligned with brand goals.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="process-step process-margen" id="webdesigner">
+                <h3>Complete Web Designer – End-to-End Website Solutions</h3>
+                <p>
+                    From planning and wireframing to design and final launch, I provide complete web design solutions.
+                    My approach combines modern UI/UX design with clean front-end development, ensuring websites are
+                    responsive, visually appealing, and aligned with the client’s brand identity.
+                </p>
+                <div class="key-feature">
+                    <h3>Key Features & Skills:</h3>
+                </div>
+                <div class="key-feature-grid">
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Wireframing & Prototyping
+                                Planning user flows and layouts with modern tools before development.</li>
+
+                            <li><i class="fas fa-check-circle"></i> UI/UX Design
+                                Creating visually appealing, user-friendly, and intuitive web interfaces.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Responsive Web Design
+                                Ensuring mobile-first, flexible layouts that adapt seamlessly to all devices.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Front-End Development
+                                Building pixel-perfect designs with HTML, CSS, Bootstrap, and JavaScript.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> WordPress & CMS Integration
+                                Converting designs into functional, easy-to-manage websites with CMS.</li>
+
+                            <li><i class="fas fa-check-circle"></i> SEO & Performance Optimization
+                                Designing sites with fast load times and search-friendly structure.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Full Project Lifecycle
+                                Managing projects from planning and design to testing and deployment.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Cross-Browser Compatibility
+                                Guaranteeing consistent look and feel across all major browsers.</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-feature-one stats">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Security Best Practices
+                                Implementing safe, secure design principles for reliable websites.</li>
+
+                            <li><i class="fas fa-check-circle"></i> Client-Centered Customization
+                                Delivering websites aligned with specific branding and business goals.</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="process-step">
+
+
+                <h3>Learn To Develop Sites With Components And Design</h3>
+                <p>Mastering how to develop websites using components and modern design principles is essential for
+                    becoming
+                    a skilled Web and WordPress Developer. In front-end development, this means creating reusable UI
+                    components using HTML, CSS, JavaScript, and frameworks like Bootstrap.
+
+                    These components—like headers, footers, cards, and sliders—help build scalable, maintainable, and
+                    consistent websites.
+
+                    As a WordPress Developer, learning component-based design means efficiently working with themes,
+                    template parts, and reusable blocks.
+
+                    Tools like Elementor, and custom shortcodes allow developers to build flexible layouts while
+                    maintaining
+                    design consistency across pages. This approach enhances site performance, improves user experience,
+                    and
+                    makes future updates faster and easier.
+
+                    Combining components with responsive and user-friendly design ensures that every website is both
+                    aesthetically pleasing and functionally effective—whether you're creating a business site,
+                    portfolio, or
+                    eCommerce store.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="40">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hours Support</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I use to create amazing digital experiences</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>CMS & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> WordPress</li>
+                        <li><i class="fas fa-check-circle"></i> Bootstrap</li>
+                        <li><i class="fas fa-check-circle"></i> jQuery</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> HTML5</li>
+                        <li><i class="fas fa-check-circle"></i> CSS3</li>
+                        <li><i class="fas fa-check-circle"></i> JavaScript</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Design Tools</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Canva</li>
+                        <li><i class="fas fa-check-circle"></i> Figma</li>
+                        <li><i class="fas fa-check-circle"></i> Adobe Creative Suite</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Journey Section
+        <section class="journey" id="journey">
+            <div class="section-header">
+                <h2>My Journey</h2>
+                <p>Professional milestones and career highlights</p>
+            </div>
+
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Freelance Web Developer</h3>
+                        <span class="date">2021 - Present</span>
+                        <p>Creating custom websites and web applications for clients across various industries.
+                            Specializing in responsive design and user experience optimization.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Graphic Designer</h3>
+                        <span class="date">2020 - Present</span>
+                        <p>Designing logos, social media graphics, and marketing materials using Canva and other design
+                            tools. Focus on creating visually appealing and brand-consistent designs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>WordPress Specialist</h3>
+                        <span class="date">2019 - Present</span>
+                        <p>Developing custom WordPress themes and plugins. Helping businesses establish their online
+                            presence with professional, SEO-optimized websites.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Portfolio Section -->
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="section-header">
+                <h2>My Portfolio</h2>
+                <p>A showcase of my recent projects and creative work</p>
+            </div>
+            <div class="portfolio-grid">
+
+                <!--Portfolio 1  -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Beige and Black Modern Mockup Collage Marketing Guide Business Instagram Post.png"
+                                alt="Aesthetic Beauty">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio 2  -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Grow & Grace beauty salon Mockup.png"
+                                alt="Grow & Grace beauty salon">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio 3  -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Haven coffee Mockup.png" alt="Haven coffee">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio 4  -->
+                <!-- <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Aesthetic Beauty mockup.png" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!--Portfolio 5  -->
+                <!-- <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Aesthetic Beauty mockup.png" alt="">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+            </div>
+            <div class="portfolio-btn">
+                <a href="portfolio.html" class="cta-button decoration-btn">View More Projects</a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>SHAHID</h3>
+                <p>I’m a skilled WordPress Designer and Front-End Developer, specializing in responsive and
+                    SEO-optimized websites. As a UI/UX Designer, I craft clean, user-friendly designs with Canva that
+                    enhance digital experiences and bring ideas to life.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-shahid-33a7a720b/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/MUHAMMA46396783"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/muhammad.shahid.91999/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/shahid.dev1/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/SpyBird80"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">WordPress Design</a></li>
+                    <li><a href="#">Frontend Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Video Editing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:shahid.devmail@gmail.com">shahid.devmail@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+923027918080">+92 (302) 791-8080</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chishtian, Pakistan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SHAHID. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+        let posX = 0, posY = 0;
+        let mouseX = 0, mouseY = 0;
+
+        gsap.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                gsap.set(follower, {
+                    css: {
+                        left: posX - 12,
+                        top: posY - 12
+                    }
+                });
+
+                gsap.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        document.addEventListener('mouseenter', (e) => {
+            if (e.target.closest('button, a, .cta-button')) {
+                cursor.classList.add('grow');
+                follower.classList.add('grow');
+            }
+        });
+
+        document.addEventListener('mouseleave', (e) => {
+            if (e.target.closest('button, a, .cta-button')) {
+                cursor.classList.remove('grow');
+                follower.classList.remove('grow');
+            }
+        });
+
+        // Hero section animations
+        gsap.from('.hero h1', {
+            duration: 1.5,
+            y: 100,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.2
+        });
+
+        gsap.from('.hero p', {
+            duration: 1.5,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.4
+        });
+
+        // Stats counter animation
+        const statNumbers = document.querySelectorAll('.stat-number');
+        statNumbers.forEach(stat => {
+            const updateCount = () => {
+                const target = +stat.getAttribute('data-target');
+                const count = +stat.innerText;
+                const speed = 200;
+
+                const inc = target / speed;
+
+                if (count < target) {
+                    stat.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    stat.innerText = target;
+                }
+            };
+
+            ScrollTrigger.create({
+                trigger: stat,
+                start: 'top 80%',
+                onEnter: updateCount
+            });
+        });
+
+        // About section animation
+        gsap.from('.about-text h2', {
+            scrollTrigger: {
+                trigger: '.about-text h2',
+                start: 'top 85%'
+            },
+            duration: 1,
+            x: -100,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.about-text p', {
+            scrollTrigger: {
+                trigger: '.about-text p',
+                start: 'top 85%'
+            },
+            duration: 1,
+            x: -100,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.2
+        });
+
+        gsap.from('.profile-img', {
+            scrollTrigger: {
+                trigger: '.profile-img',
+                start: 'top 85%'
+            },
+            duration: 1,
+            x: 100,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        // Skills section animation
+        gsap.utils.toArray('.skill-category').forEach((category, i) => {
+            gsap.from(category, {
+                scrollTrigger: {
+                    trigger: category,
+                    start: 'top 85%'
+                },
+                duration: 1,
+                y: 100,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: i * 0.2
+            });
+        });
+
+        // Timeline animation
+        gsap.utils.toArray('.timeline-content').forEach((content, i) => {
+            gsap.from(content, {
+                scrollTrigger: {
+                    trigger: content,
+                    start: 'top 85%'
+                },
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: i * 0.2
+            });
+        });
+
+        // Portfolio items animation
+        gsap.utils.toArray('.portfolio-item').forEach((item, i) => {
+            gsap.from(item, {
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 85%'
+                },
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: i * 0.1
+            });
+        });
+
+        // Portfolio button animation
+        gsap.from('.portfolio-btn', {
+            scrollTrigger: {
+                trigger: '.portfolio-btn',
+                start: 'top 85%'
+            },
+            duration: 1,
+            scale: 0.8,
+            opacity: 0,
+            ease: 'back.out(1.7)',
+            delay: 0.3
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: -5,
+                    ease: 'power2.out'
+                });
+            });
+
+            button.addEventListener('mouseleave', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: 0,
+                    ease: 'power2.out'
+                });
+            });
+        });
+
+        // Portfolio hover effects
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                gsap.to(item.querySelector('.portfolio-overlay'), {
+                    duration: 0.4,
+                    opacity: 1
+                });
+            });
+
+            item.addEventListener('mouseleave', () => {
+                gsap.to(item.querySelector('.portfolio-overlay'), {
+                    duration: 0.4,
+                    opacity: 0
+                });
+            });
+        });
+
+        // Three.js Background
+        function initThreeJS() {
+            // Scene setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById('three-canvas'),
+                alpha: true,
+                antialias: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            // Create particles
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 1500;
+
+            const posArray = new Float32Array(particlesCount * 3);
+            const colorArray = new Float32Array(particlesCount * 3);
+
+            for (let i = 0; i < particlesCount * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 20;
+                colorArray[i] = Math.random();
+            }
+
+            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorArray, 3));
+
+            // Material
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.05,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            // Points system
+            const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+
+            // Camera position
+            camera.position.z = 5;
+
+            // Mouse movement
+            let mouseX = 0;
+            let mouseY = 0;
+
+            document.addEventListener('mousemove', (event) => {
+                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            });
+
+            // Animation
+            const animate = () => {
+                requestAnimationFrame(animate);
+
+                // Rotate particles
+                particlesMesh.rotation.x += 0.0005;
+                particlesMesh.rotation.y += 0.001;
+
+                // Move camera with mouse
+                camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+                camera.position.y += (mouseY * 2 - camera.position.y) * 0.05;
+                camera.lookAt(scene.position);
+
+                renderer.render(scene, camera);
+            };
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            animate();
+        }
+
+        // Initialize Three.js when page loads
+        window.addEventListener('load', initThreeJS);
+
+        // Smooth scrolling ONLY for internal section links (#id)
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

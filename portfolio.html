@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Shahid - Creative Web Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <i class="fas fa-code"></i> -->
+                <a href="Home.html" id="home-link"> <span id="home">SHAHID</span></a>
+            </div>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="cta-button decoration-btn">Get In Touch</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <canvas id="three-canvas"></canvas>
+            <div class="hero-content">
+                <h1>My Portfolio</h1>
+                <p>Explore a collection of my recent projects where creativity meets functionality. From responsive
+                    websites to engaging UI/UX designs, each project reflects my passion for delivering clean,
+                    user-focused digital experiences.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="section-header">
+                <h2>All Projects</h2>
+                <!-- <p>Explore my diverse range of creative work</p> -->
+            </div>
+
+            <div class="portfolio-grid">
+
+                <!--Portfolio 1  -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Beige and Black Modern Mockup Collage Marketing Guide Business Instagram Post.png"
+                                alt="Aesthetic Beauty">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio 2  -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Grow & Grace beauty salon Mockup.png"
+                                alt="Grow & Grace beauty salon">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio 3  -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Haven coffee Mockup.png" alt="Haven coffee">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio 4  -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/workflow Mockup (1).png" alt="workflowPro">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio 5  -->
+                <!-- <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="Media/images/Aesthetic Beauty mockup.png" alt="site name" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aesthetic Beauty</h3>
+                            <p>Discover Beauty Essentials at Aesthetic Beauty</p>
+                            <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+            </div>
+
+            <!-- <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="wordpress">WordPress</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="graphics">Graphics</button>
+                <button class="filter-btn" data-filter="thumbnails">Thumbnails</button>
+            </div> -->
+
+            <!-- <div class="portfolio-grid"> -->
+            <!-- WordPress Projects -->
+            <!-- <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-img">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <div class="portfolio-category">WordPress</div>
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce WordPress Site</h3>
+                        <p>Custom WordPress theme with WooCommerce integration</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-img">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="portfolio-category">WordPress</div>
+                    <div class="portfolio-overlay">
+                        <h3>Business WordPress Website</h3>
+                        <p>Professional corporate website with custom functionality</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-img">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <div class="portfolio-category">WordPress</div>
+                    <div class="portfolio-overlay">
+                        <h3>Blog WordPress Theme</h3>
+                        <p>Custom blog theme with advanced post layouts</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> -->
+
+            <!-- Frontend Projects -->
+            <!-- <div class="portfolio-item" data-category="frontend">
+                    <div class="portfolio-img">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="portfolio-category">Frontend</div>
+                    <div class="portfolio-overlay">
+                        <h3>Responsive Landing Page</h3>
+                        <p>Modern landing page with smooth animations</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="frontend">
+                    <div class="portfolio-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="portfolio-category">Frontend</div>
+                    <div class="portfolio-overlay">
+                        <h3>Mobile-First Web App</h3>
+                        <p>Progressive web application with offline functionality</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="frontend">
+                    <div class="portfolio-img">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="portfolio-category">Frontend</div>
+                    <div class="portfolio-overlay">
+                        <h3>Dashboard Interface</h3>
+                        <p>Interactive dashboard with data visualization</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> -->
+
+            <!-- Graphics Projects -->
+            <!-- <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="portfolio-category">Graphics</div>
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity Package</h3>
+                        <p>Complete branding solution with logo and guidelines</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="portfolio-category">Graphics</div>
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Graphics</h3>
+                        <p>Engaging social media post designs and templates</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="portfolio-category">Graphics</div>
+                    <div class="portfolio-overlay">
+                        <h3>Marketing Materials</h3>
+                        <p>Brochures, flyers, and promotional materials</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> -->
+
+            <!-- Thumbnails Projects -->
+            <!-- <div class="portfolio-item" data-category="thumbnails">
+                    <div class="portfolio-img">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="portfolio-category">Thumbnails</div>
+                    <div class="portfolio-overlay">
+                        <h3>YouTube Thumbnails</h3>
+                        <p>Eye-catching thumbnails that boost click-through rates</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="thumbnails">
+                    <div class="portfolio-img">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="portfolio-category">Thumbnails</div>
+                    <div class="portfolio-overlay">
+                        <h3>Video Thumbnails</h3>
+                        <p>Professional video preview thumbnails</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="thumbnails">
+                    <div class="portfolio-img">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="portfolio-category">Thumbnails</div>
+                    <div class="portfolio-overlay">
+                        <h3>Blog Post Thumbnails</h3>
+                        <p>Attractive featured images for blog content</p>
+                        <a href="#" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </section>
+
+        <!-- Testimonials Section -->
+        <!-- <section class="testimonials" id="testimonials">
+            <div class="section-header">
+                <h2>What Clients Say</h2>
+                <p>Feedback from satisfied customers</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Excellent work on our WordPress website. Professional, responsive, and delivered on time. Highly
+                        recommended!
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SJ</div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Amazing graphic design skills! The thumbnails created for our YouTube channel increased our
+                        views
+                        significantly.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <p>Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Outstanding frontend development work. The website is fast, beautiful, and works perfectly on
+                        all
+                        devices.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ED</div>
+                        <div class="author-info">
+                            <h4>Emily Davis</h4>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Creating digital experiences that make a difference</h2>
+                <p>I design and develop modern, user-friendly websites that not only look great but also deliver real
+                    impact. Whether it’s a personal brand, business, or creative project, I focus on creating digital
+                    experiences that connect with people and drive results.</p>
+
+                <a href="contact.html" class="cta-button decoration-btn">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>SHAHID</h3>
+                <p>I’m a skilled WordPress Designer and Front-End Developer, specializing in responsive and
+                    SEO-optimized websites. As a UI/UX Designer, I craft clean, user-friendly designs with Canva that
+                    enhance digital experiences and bring ideas to life.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-shahid-33a7a720b/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/MUHAMMA46396783"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/muhammad.shahid.91999/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/shahid.dev1/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/SpyBird80"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+
+                    <li><a href="#">WordPress Design</a></li>
+                    <li><a href="#">Frontend Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Video Editing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:shahid.devmail@gmail.com">shahid.devmail@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+923027918080">+92 (302) 791-8080</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chishtian, Pakistan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SHAHID. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+        let posX = 0, posY = 0;
+        let mouseX = 0, mouseY = 0;
+
+        gsap.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                gsap.set(follower, {
+                    css: {
+                        left: posX - 12,
+                        top: posY - 12
+                    }
+                });
+
+                gsap.set(cursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        document.addEventListener('mouseenter', (e) => {
+            if (e.target.closest('button, a, .cta-button, .filter-btn, .portfolio-item')) {
+                cursor.classList.add('grow');
+                follower.classList.add('grow');
+            }
+        });
+
+        document.addEventListener('mouseleave', (e) => {
+            if (e.target.closest('button, a, .cta-button, .filter-btn, .portfolio-item')) {
+                cursor.classList.remove('grow');
+                follower.classList.remove('grow');
+            }
+        });
+
+        // Hero section animations
+        gsap.from('.hero h1', {
+            duration: 1.5,
+            y: 100,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.2
+        });
+
+        gsap.from('.hero p', {
+            duration: 1.5,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.4
+        });
+
+        // Portfolio items animation
+        gsap.utils.toArray('.portfolio-item').forEach((item, i) => {
+            gsap.from(item, {
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 85%'
+                },
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: i * 0.1
+            });
+        });
+
+        // Testimonial cards animation
+        gsap.utils.toArray('.testimonial-card').forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 85%'
+                },
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                ease: 'power3.out',
+                delay: i * 0.1
+            });
+        });
+
+        // CTA section animation
+        gsap.from('.cta-content h2', {
+            scrollTrigger: {
+                trigger: '.cta-content h2',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.cta-content p', {
+            scrollTrigger: {
+                trigger: '.cta-content p',
+                start: 'top 85%'
+            },
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.2
+        });
+
+        gsap.from('.cta-button', {
+            scrollTrigger: {
+                trigger: '.cta-button',
+                start: 'top 85%'
+            },
+            duration: 1,
+            scale: 0.8,
+            opacity: 0,
+            ease: 'back.out(1.7)',
+            delay: 0.4
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.cta-button, .filter-btn').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: -5,
+                    ease: 'power2.out'
+                });
+            });
+
+            button.addEventListener('mouseleave', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    y: 0,
+                    ease: 'power2.out'
+                });
+            });
+        });
+
+        // Portfolio hover effects
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                gsap.to(item.querySelector('.portfolio-overlay'), {
+                    duration: 0.4,
+                    opacity: 1
+                });
+            });
+
+            item.addEventListener('mouseleave', () => {
+                gsap.to(item.querySelector('.portfolio-overlay'), {
+                    duration: 0.4,
+                    opacity: 0
+                });
+            });
+        });
+
+        // Portfolio filtering
+        // const filterButtons = document.querySelectorAll('.filter-btn');
+        // const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        // filterButtons.forEach(button => {
+        //     button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        // filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        //         button.classList.add('active');
+
+        //         const filter = button.getAttribute('data-filter');
+
+        //         portfolioItems.forEach(item => {
+        //             if (filter === 'all' || item.getAttribute('data-category') === filter) {
+        //                 item.style.display = 'block';/
+        //                 gsap.fromTo(item,
+        //                     { opacity: 0, y: 20 },
+        //                     { opacity: 1, y: 0, duration: 0.5 }
+        //                 );
+        //             } else {
+        //                 item.style.display = 'none';
+        //             }
+        //         });
+        //     });
+        // });
+
+        // Three.js Background
+        function initThreeJS() {
+            // Scene setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById('three-canvas'),
+                alpha: true,
+                antialias: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            // Create particles
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 1500;
+
+            const posArray = new Float32Array(particlesCount * 3);
+            const colorArray = new Float32Array(particlesCount * 3);
+
+            for (let i = 0; i < particlesCount * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 20;
+                colorArray[i] = Math.random();
+            }
+
+            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorArray, 3));
+
+            // Material
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.05,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            // Points system
+            const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+
+            // Camera position
+            camera.position.z = 5;
+
+            // Mouse movement
+            let mouseX = 0;
+            let mouseY = 0;
+
+            document.addEventListener('mousemove', (event) => {
+                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            });
+
+            // Animation
+            const animate = () => {
+                requestAnimationFrame(animate);
+
+                // Rotate particles
+                particlesMesh.rotation.x += 0.0005;
+                particlesMesh.rotation.y += 0.001;
+
+                // Move camera with mouse
+                camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+                camera.position.y += (mouseY * 2 - camera.position.y) * 0.05;
+                camera.lookAt(scene.position);
+
+                renderer.render(scene, camera);
+            };
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            animate();
+        }
+
+        // Initialize Three.js when page loads
+        window.addEventListener('load', initThreeJS);
+
+        // Smooth scrolling ONLY for internal section links (#id)
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
